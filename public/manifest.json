@@ -1,0 +1,26 @@
+{
+  "name": "AI Studio Orchestrator",
+  "short_name": "AI Studio",
+  "description": "High-fidelity AI expert orchestration engines and code sandbox dashboards.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#090d16",
+  "scope": "/",
+  "categories": ["utilities", "productivity", "education"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI Studio Multi-Agent Hub",
+  "description": "An interactive multi-agent sandbox and business suite that auto-configures eleven expert domains from Education and Marketing to Startup Advisory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

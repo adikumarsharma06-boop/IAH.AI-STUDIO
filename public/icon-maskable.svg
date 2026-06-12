@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    
+    <!-- Central Glyph Gradient -->
+    <linearGradient id="glyphGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Full bleed background for adaptive icons -->
+  <rect x="0" y="0" width="512" height="512" fill="url(#bgGrad)" />
+
+  <!-- Inner safe zone boundary visualization (invisible) -->
+  <circle cx="256" cy="256" r="160" fill="#0f172a" fill-opacity="0.1" />
+
+  <!-- Orchestration glyph scaled perfectly in the safe zone -->
+  <g filter="url(#dropShadow)">
+    <rect x="196" y="196" width="120" height="120" rx="24" fill="url(#glyphGrad)" />
+    <!-- Center star inside -->
+    <path d="M256 226c0 0 8 12 18 18 10 6 18 12 18 12s-12 8-18 18c-10 6-18 12-18 12s-8-12-18-18c-10-6-18-12-18-12s12-8 18-18c10-6 18-12 18-12z" fill="#4f46e5" />
+    <!-- Secondary stars inside safe margins -->
+    <path d="M165 175c0 0 25-5 30-25 5 20 25 25 25 25-6 0-25 5-30 25-5-20-25-25-25-25z" fill="#ffffff" />
+    <path d="M310 325c0 0 25-5 30-25 5 20 25 25 25 25-6 0-25 5-30 25-5-20-25-25-25-25z" fill="#f59e0b" />
+  </g>
+</svg>

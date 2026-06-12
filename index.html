@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="dark selection:bg-indigo-500/30 selection:text-indigo-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>AI Studio Orchestrator</title>
+    
+    <!-- PWA Config & Core Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#090d16" />
+    
+    <!-- Core scalable vector icon browser tags -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" type="image/svg+xml" href="/icon.svg" />
+    
+    <!-- Apple standalone / high-fidelity PWA iOS flags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AI Studio" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    
+    <!-- Custom styling to handle notch safe zones and disable elastic mobile rubberband scroll on body where not needed -->
+    <style>
+      body {
+        padding-top: env(safe-area-inset-top);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        background-color: #020617;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 font-sans antialiased text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
